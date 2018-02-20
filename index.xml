@@ -6,10 +6,20 @@
     <description>Recent content on Cloudbusting</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Feb 2018 12:42:11 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 20 Feb 2018 10:24:14 +0100</lastBuildDate>
     
 	<atom:link href="https://offtechnologies.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Continuous Deployment - Using Travis-CI to Build GitHub Pages</title>
+      <link>https://offtechnologies.github.io/posts/travis/</link>
+      <pubDate>Tue, 20 Feb 2018 10:24:14 +0100</pubDate>
+      
+      <guid>https://offtechnologies.github.io/posts/travis/</guid>
+      <description>A static site generator (i.e HUGO) is a tool that renders content into html, css and javascript. The content is written in markdown (or html) and contains some metadata like dates, title or tags, categories, etc.
+In theory, the workflow to make a new post is quite simple, just throw in a new markdown file in the right place, rebuild your site, and deploy it to your server. But deploying the static site could be a hell.</description>
+    </item>
     
     <item>
       <title>Ubuntu and Suricata in IPS mode - 8 simple steps</title>
