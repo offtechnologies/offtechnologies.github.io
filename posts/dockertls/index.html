@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<meta name="author" content="offtechnologies">
+		<meta name="description" content="Site Description">
+		<meta name="generator" content="Hugo 0.38-DEV" />
+		<title>Protect Your Docker Socket! &middot; Cloudbusting</title>
+		<link rel="shortcut icon" href="https://offtechnologies.github.io/images/favicon.ico">
+		<link rel="stylesheet" href="https://offtechnologies.github.io/css/style.css">
+		<link rel="stylesheet" href="https://offtechnologies.github.io/css/highlight.css">
+
+		
+		<link rel="stylesheet" href="https://offtechnologies.github.io/css/font-awesome.min.css">
+		
+
+		
+
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='https://offtechnologies.github.io/'> <span class="arrow">←</span>Home</a>
+	
+	<a href='https://offtechnologies.github.io/posts'>Archive</a>
+	<a href='https://offtechnologies.github.io/tags'>Tags</a>
+	<a href='https://offtechnologies.github.io/about'>About</a>
+
+	
+
+	
+</nav>
+
+
+        <section id="wrapper" class="post">
+            <article>
+                <header>
+                    <h1>
+                        Protect Your Docker Socket!
+                    </h1>
+                    <h2 class="headline">
+                    Mar 2, 2018 10:48
+                    · 197 words
+                    · 1 minute read
+                      <span class="tags">
+                      
+                      
+                          
+                              <a href="https://offtechnologies.github.io/tags/docker">Docker</a>
+                          
+                              <a href="https://offtechnologies.github.io/tags/devops">DevOps</a>
+                          
+                              <a href="https://offtechnologies.github.io/tags/tls">TLS</a>
+                          
+                              <a href="https://offtechnologies.github.io/tags/security">Security</a>
+                          
+                              <a href="https://offtechnologies.github.io/tags/scaleway">Scaleway</a>
+                          
+                      
+                      
+                      </span>
+                    </h2>
+                </header>
+                
+                <section id="post-body">
+                    
+
+<p>By default, when you install and start Docker on Linux, client access Docker-Engine on local host with unix socket (/var/run/docker.sock), which by default is only accessible by the root user. Exposed REST API with root access to Linux kernel (cgroups, kernel namespaces, etc.)!!!??? No authentication or authorization!!!???</p>
+
+<p>So, how to access Docker-Engine over network (tcp) and how to secure this communication using TLS?</p>
+
+<h3 id="method-nr-1-the-hard-way">Method nr 1 - The Hard Way</h3>
+
+<p>Follow the steps in <a href="https://docs.docker.com/engine/security/https/">Protect the Docker daemon socket doc</a>. Deployment and use of TLS/SSL is easy ;-)</p>
+
+<h3 id="method-nr-2-the-popular-way">Method nr 2 - The Popular Way</h3>
+
+<p>Sick of googling every time you need a self signed certificate? Check <a href="https://hub.docker.com/r/paulczar/omgwtfssl/">OMGWTFSSL Cert Generator</a></p>
+
+<h3 id="method-nr-3-the-easiest-way-imho">Method nr 3 - The Easiest Way (IMHO)</h3>
+
+<p><a href="https://docs.docker.com/machine/overview/">Docker-Machine</a>&hellip; It can be used to create Docker host on various platforms locally or in a cloud environment. You can control your Docker hosts with it as well. Docker-Machine also has the option to run everything over TLS. Let&rsquo;s take a look at how we deploy to a cloud environment of our choosing - Docker host in <a href="https://www.scaleway.com">Scaleway</a>:</p>
+
+<pre><code>docker-machine --native-ssh create \
+  --driver generic \
+  --generic-ip-address &lt;docker_host_ip&gt; \
+  --generic-ssh-user=root \
+  --generic-ssh-key=&lt;full_path_to_your_id_rsa&gt; \
+  --engine-storage-driver overlay2 \
+  &lt;docker_host_name&gt;
+
+</code></pre>
+
+<h5 id="enjoy-the-magic">Enjoy the magic!</h5>
+
+                </section>
+            </article>
+
+            
+
+            
+
+            
+
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    <a class="symbol" href="https://www.github.com/offtechnologies">
+        <i class="fa fa-github"></i>
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+       © Copyright 2018 <i class="fa fa-heart" aria-hidden="true"></i> offtechnologies
+    
+    </p>
+    
+</footer>
+
+        </section>
+
+        <script src="https://offtechnologies.github.io/js/jquery-3.3.1.min.js"></script>
+<script src="https://offtechnologies.github.io/js/main.js"></script>
+<script src="https://offtechnologies.github.io/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+    </body>
+</html>

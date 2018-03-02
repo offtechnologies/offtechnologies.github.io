@@ -6,10 +6,21 @@
     <description>Recent content in Devops on Cloudbusting</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Feb 2018 10:24:14 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 02 Mar 2018 10:48:14 +0100</lastBuildDate>
     
 	<atom:link href="https://offtechnologies.github.io/tags/devops/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Protect Your Docker Socket!</title>
+      <link>https://offtechnologies.github.io/posts/dockertls/</link>
+      <pubDate>Fri, 02 Mar 2018 10:48:14 +0100</pubDate>
+      
+      <guid>https://offtechnologies.github.io/posts/dockertls/</guid>
+      <description>By default, when you install and start Docker on Linux, client access Docker-Engine on local host with unix socket (/var/run/docker.sock), which by default is only accessible by the root user. Exposed REST API with root access to Linux kernel (cgroups, kernel namespaces, etc.)!!!??? No authentication or authorization!!!???
+So, how to access Docker-Engine over network (tcp) and how to secure this communication using TLS?
+Method nr 1 - The Hard Way Follow the steps in Protect the Docker daemon socket doc.</description>
+    </item>
     
     <item>
       <title>Continuous Deployment - Using Travis-CI to Build GitHub Pages</title>

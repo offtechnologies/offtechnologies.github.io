@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://offtechnologies.github.io/posts/dockertls/</loc>
+    <lastmod>2018-03-02T10:48:14+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://offtechnologies.github.io/posts/travis/</loc>
     <lastmod>2018-02-20T10:24:14+01:00</lastmod>
   </url>
@@ -30,7 +35,7 @@
   
   <url>
     <loc>https://offtechnologies.github.io/</loc>
-    <lastmod>2018-02-20T10:24:14+01:00</lastmod>
+    <lastmod>2018-03-02T10:48:14+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -42,7 +47,13 @@
   
   <url>
     <loc>https://offtechnologies.github.io/tags/devops/</loc>
-    <lastmod>2018-02-20T10:24:14+01:00</lastmod>
+    <lastmod>2018-03-02T10:48:14+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://offtechnologies.github.io/tags/docker/</loc>
+    <lastmod>2018-03-02T10:48:14+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -60,13 +71,19 @@
   
   <url>
     <loc>https://offtechnologies.github.io/posts/</loc>
-    <lastmod>2018-02-20T10:24:14+01:00</lastmod>
+    <lastmod>2018-03-02T10:48:14+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://offtechnologies.github.io/tags/scaleway/</loc>
+    <lastmod>2018-03-02T10:48:14+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://offtechnologies.github.io/tags/security/</loc>
-    <lastmod>2018-02-19T12:42:11+01:00</lastmod>
+    <lastmod>2018-03-02T10:48:14+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -79,6 +96,12 @@
   <url>
     <loc>https://offtechnologies.github.io/tags/</loc>
     <lastmod>2018-02-20T10:24:14+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://offtechnologies.github.io/tags/tls/</loc>
+    <lastmod>2018-03-02T10:48:14+01:00</lastmod>
     <priority>0</priority>
   </url>
   
